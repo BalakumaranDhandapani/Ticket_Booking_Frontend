@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  /* margin: .5rem; */
+  /* background: linear-gradient(to right, #BFF098, #6FD6FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #343b3f; */
+  position: sticky;
+  top: 0px;
+  /* color: white; */
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  display: block;
+}
+
+.main-title {
+  text-decoration: underline yellowgreen;
+  letter-spacing: 3px;
+  padding-bottom: 5px;
+}
+
+#accounts ul li a {
+  margin-right: 1rem;
+}
+
+.navbar-links li a:hover {
+  /* text-decoration: underline #ff6666; */
+  background-color: white;
+  color: #ff6666;
+  border-bottom: 3px solid blue;
+}
+
+.bg-login-image {
+  background: url(https://inc42.com/wp-content/uploads/2019/04/movie-ticketing.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.login-card {
+  text-align: center;
+}
+
+.form-control {
+  border-radius: 10rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.float-left {
+  float: left;
+  text-decoration: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.card-img-top {
+  height: 350px;
+  border-radius: 5%;
+}
+
+.card-title {
+  font-style: italic;
+  color: purple;
+  display: inline;
+  padding-right: 5px;
+}
+
+.rating-icon {
+  color: orange;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  background-color: #e3f2fd;
+}
+
+.social-media a {
+  padding: 1.5rem;
+  text-decoration: none;
+  color: blueviolet;
+}
+
+.showcase {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #777;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.showcase li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.showcase li small {
+  margin-left: 2px;
+}
+
+.moviesbackhomeicon {
+  margin-right: 7px;
+}
