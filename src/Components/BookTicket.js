@@ -26,7 +26,7 @@ function BookTicket() {
 
     let getMovie = async () => {
         try {
-            const moviebyID = await axios.get(`http://localhost:5005/getOneMovie/${params._id}`);
+            const moviebyID = await axios.get(`https://ticket-booking-pgwd.onrender.com/getOneMovie/${params._id}`);
             SetMovie(moviebyID.data);
         } catch (error) {
             console.log(error);
@@ -37,7 +37,7 @@ function BookTicket() {
         e.preventDefault();
         setLoading(true);
         try {
-            await axios.post("http://localhost:5005/bookedtickets", {
+            await axios.post("https://ticket-booking-pgwd.onrender.com/bookedtickets", {
                 Movie_Name: movie.title,
                 Movie_Date: movieDate,
                 Tickets: Tickets,

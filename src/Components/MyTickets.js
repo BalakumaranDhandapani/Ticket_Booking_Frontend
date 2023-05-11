@@ -16,7 +16,7 @@ function MyTickets() {
 
     let getBookedMovies = async () => {
         try {
-            const bookedMovies = await axios.get("http://localhost:5005/getAllBookedTickets");
+            const bookedMovies = await axios.get("https://ticket-booking-pgwd.onrender.com/getAllBookedTickets");
             console.log(bookedMovies);
             SetMoviesList(bookedMovies.data);
             SetLoading(false)

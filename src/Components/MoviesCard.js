@@ -6,33 +6,6 @@ import { Link } from 'react-router-dom'
 
 function MoviesCard() {
 
-    // const movies = [
-    //     {
-    //         pic: "https://filmfare.wwmindia.com/content/2022/dec/pathaan11669878737.jpg",
-    //         title: "Pathan",
-    //         cbfc: "U/A",
-    //         rating: "8.6/10",
-    //         genre: "Action/Thriller",
-    //         language: "Tamil/Hindi"
-    //     },
-    //     {
-    //         pic: "https://wallpapercave.com/wp/wp11261599.jpg",
-    //         title: "Varisu",
-    //         cbfc: "U",
-    //         rating: "8.4/10",
-    //         genre: "Action/Drama",
-    //         language: "Tamil"
-    //     },
-    //     {
-    //         pic: "https://m.media-amazon.com/images/M/MV5BYTQ0OTA5OTEtZWFkNy00Y2Q4LWI1NGEtNDA5OGE0Y2JjZjQxXkEyXkFqcGdeQXVyMTE5NTEyNTg5._V1_.jpg",
-    //         title: "Waltair Veerayya",
-    //         cbfc: "U/A",
-    //         rating: "8.1/10",
-    //         genre: "Action/Drama",
-    //         language: "Telugu"
-    //     }
-    // ]
-
     const [moviesList, SetMoviesList] = useState([]);
     const [isLoading, SetLoading] = useState(true);
 
@@ -43,7 +16,7 @@ function MoviesCard() {
 
     let getMovies = async () => {
         try {
-            const movies = await axios.get("http://localhost:5005/getAllMovies");
+            const movies = await axios.get("https://ticket-booking-pgwd.onrender.com/getAllMovies");
             SetMoviesList(movies.data);
             SetLoading(false);
         } catch (error) {
